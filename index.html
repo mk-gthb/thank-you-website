@@ -2,38 +2,56 @@
 <html>
 <head>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        
         body {
             margin: 0;
             padding: 0;
             height: 100vh;
-            background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjJyM29xeGNtZ3p2cWVvd2Vrczc3MHlwcTdiMG9hbWQ4ZW1kNXZ6bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Zccp49BLOMQF5ZcjlI/giphy.gif') center center;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjJyM29xeGNtZ3p2cWVvd2Vrczc3MHlwcTdiMG9hbWQ4ZW1kNXZ6bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Zccp49BLOMQF5ZcjlI/giphy.gif') center center;
             background-size: cover;
             background-repeat: no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Playfair Display', serif;
+            overflow: hidden;
         }
         
         .message {
             text-align: center;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            color: #fff;
+            background: rgba(20, 20, 20, 0.85);
+            padding: 60px 50px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            animation: fadeIn 2s ease-in;
         }
         
         h1 { 
-            font-size: 4em; 
+            font-size: 5em; 
             margin: 0;
-            font-weight: bold;
+            font-weight: 700;
+            background: linear-gradient(45deg, #FFD700, #FFA500, #FF6347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: 3px;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
     <div class="message">
-        <h1>Thank You Anson!</h1>
+        <h1>Thank You Anson!!</h1>
     </div>
 </body>
-
 </html>
-
-
